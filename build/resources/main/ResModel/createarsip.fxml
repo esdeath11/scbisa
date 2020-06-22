@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="355.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPackage.CRUD.Create.CreateArsip">
+   <children>
+      <TextField fx:id="judul" layoutX="279.0" layoutY="101.0" />
+      <Text layoutX="341.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Judul" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="59.0" stroke="DODGERBLUE" strokeType="INSIDE" width="705.0" />
+      <Text fill="WHITE" layoutX="74.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buat Arsip">
+         <font>
+            <Font name="Arial" size="40.0" />
+         </font>
+      </Text>
+      <Button layoutX="608.0" layoutY="12.0" mnemonicParsing="false" onAction="#kembali" prefHeight="35.0" prefWidth="69.0" text="Kembali" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="25.0" layoutY="331.0" stroke="DODGERBLUE" strokeType="INSIDE" width="705.0" />
+      <RadioButton fx:id="laporan" layoutX="42.0" layoutY="93.0" mnemonicParsing="false" text="Laporan">
+         <toggleGroup>
+            <ToggleGroup fx:id="kategori" />
+         </toggleGroup></RadioButton>
+      <Text layoutX="42.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pilih Kategori" />
+      <RadioButton fx:id="proposal" layoutX="42.0" layoutY="118.0" mnemonicParsing="false" text="Proposal" toggleGroup="$kategori" />
+      <Button layoutX="279.0" layoutY="165.0" mnemonicParsing="false" onAction="#pilih" prefHeight="25.0" prefWidth="60.0" text="Pilih File" />
+      <Text fx:id="name_file" layoutX="383.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No File" wrappingWidth="184.53125" />
+      <Button layoutX="323.0" layoutY="229.0" mnemonicParsing="false" onAction="#submit" prefHeight="35.0" prefWidth="60.0" text="Submit" />
+      <ImageView fitHeight="68.0" fitWidth="60.0" layoutX="6.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/WhatsApp%20Image%202020-04-17%20at%206.27.12%20AM.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

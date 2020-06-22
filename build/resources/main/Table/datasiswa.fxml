@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="972.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPackage.Table.DataSIswa">
+   <top>
+      <AnchorPane prefHeight="69.0" prefWidth="725.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="70.0" stroke="DODGERBLUE" strokeType="INSIDE" width="974.0" />
+            <Text fill="WHITE" layoutX="93.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Siswa">
+               <font>
+                  <Font name="Arial" size="33.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="56.0" fitWidth="57.0" layoutX="21.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/teacher.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="699.0" layoutY="22.0" mnemonicParsing="false" onAction="#create" style="-fx-background-color: #12b10f;" text="Create" textFill="WHITE" />
+            <Button layoutX="766.0" layoutY="22.0" mnemonicParsing="false" onAction="#update" style="-fx-background-color: #12b10f;" text="Update" textFill="WHITE" />
+            <Button layoutX="833.0" layoutY="22.0" mnemonicParsing="false" onAction="#deleteData" style="-fx-background-color: #12b10f;" text="Delete" textFill="WHITE" />
+            <Button layoutX="634.0" layoutY="22.0" mnemonicParsing="false" onAction="#Detail" style="-fx-background-color: #12b10f;" text="Detail" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="17.0" prefWidth="817.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="39.0" stroke="DODGERBLUE" strokeType="INSIDE" width="972.0" />
+            <Button layoutX="15.0" layoutY="7.0" mnemonicParsing="false" onAction="#kembali" style="-fx-background-color: #12b10f;" text="KEMBALI" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <TableView fx:id="table" onMouseClicked="#checkData" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="id_siswa" prefWidth="174.3333282470703" text="ID" />
+          <TableColumn fx:id="nama_siswa" prefWidth="188.66668701171875" text="NAMA" />
+            <TableColumn fx:id="kelas" prefWidth="74.66665649414062" text="KELAS" />
+            <TableColumn fx:id="tp_lahir" prefWidth="161.33331298828125" text="TEMPAL LAHIR" />
+            <TableColumn fx:id="tg_lahir" prefWidth="115.66665649414062" text="TANGGAL LAHIR" />
+            <TableColumn fx:id="alamat_siswa" prefWidth="254.0" text="ALAMAT" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

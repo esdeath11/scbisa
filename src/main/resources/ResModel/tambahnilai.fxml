@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPackage.CRUD.Create.CreateNilaiSemester">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="425.0" layoutX="-1.0" stroke="DODGERBLUE" strokeType="INSIDE" width="93.0" />
+      <TextField fx:id="mapel1_new" layoutX="100.0" layoutY="181.0" />
+      <TextField fx:id="mapel2_new" layoutX="269.0" layoutY="181.0" />
+      <TextField fx:id="mapel3_new" layoutX="437.0" layoutY="181.0" />
+      <TextField fx:id="mapel4_new" layoutX="101.0" layoutY="255.0" />
+      <TextField fx:id="mapel5_new" layoutX="270.0" layoutY="255.0" />
+      <TextField fx:id="mapel6_new" layoutX="438.0" layoutY="255.0" />
+      <Text layoutX="154.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mapel 1" />
+      <Text layoutX="322.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mapel 2" />
+      <Text layoutX="495.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mapel 3" />
+      <Text layoutX="154.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mapel 4" />
+      <Text layoutX="322.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mapel 5" />
+      <Text layoutX="495.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mapel 6" />
+      <Button layoutX="308.0" layoutY="305.0" mnemonicParsing="false" onAction="#submit" prefHeight="32.0" prefWidth="73.0" text="Submit" />
+      <Button layoutX="15.0" layoutY="386.0" mnemonicParsing="false" onAction="#kembali" prefHeight="25.0" prefWidth="61.0" text="Kembali" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="425.0" layoutX="604.0" stroke="DODGERBLUE" strokeType="INSIDE" width="93.0" />
+      <ImageView fitHeight="85.0" fitWidth="73.0" layoutX="9.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/WhatsApp%20Image%202020-04-17%20at%206.27.12%20AM.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="85.0" fitWidth="73.0" layoutX="617.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/WhatsApp%20Image%202020-04-17%20at%206.27.12%20AM.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="102.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID Siswa       : " />
+      <Text layoutX="102.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama Siswa :" />
+      <Text fx:id="id_nilai" layoutX="185.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fx:id="nama_nilai" layoutX="185.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <TextField fx:id="semester_new" layoutX="437.0" layoutY="118.0" />
+      <Text layoutX="492.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester" />
+      <Text layoutX="227.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nilai Semester Baru">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

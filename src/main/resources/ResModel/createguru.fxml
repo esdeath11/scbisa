@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPackage.CRUD.Create.CreateGuru">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="55.0" stroke="DODGERBLUE" strokeType="INSIDE" width="600.0" />
+      <TextField fx:id="id" layoutX="71.0" layoutY="102.0" />
+      <TextField fx:id="nama" layoutX="235.0" layoutY="102.0" />
+      <TextField fx:id="jabatan" layoutX="400.0" layoutY="102.0" />
+      <TextField fx:id="gelar" layoutX="71.0" layoutY="157.0" />
+      <TextArea fx:id="alamat" layoutX="400.0" layoutY="157.0" prefHeight="135.0" prefWidth="149.0" />
+      <Text layoutX="136.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIP" />
+      <Text layoutX="288.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAMA" />
+      <Text layoutX="450.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JABATAN" />
+      <Text layoutX="128.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GELAR" />
+      <Text layoutX="452.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALAMAT" />
+      <Button layoutX="256.0" layoutY="272.0" mnemonicParsing="false" onAction="#submit" prefHeight="41.0" prefWidth="88.0" text="Submit" />
+      <Button layoutX="27.0" layoutY="344.0" mnemonicParsing="false" onAction="#kembali" prefHeight="41.0" prefWidth="88.0" text="Kembali" />
+      <Text fill="WHITE" layoutX="191.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buat Data Guru">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Text>
+      <TextField fx:id="mapel" layoutX="235.0" layoutY="157.0" />
+      <Text layoutX="287.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAPEL" />
+      <Button layoutX="257.0" layoutY="188.0" mnemonicParsing="false" onAction="#checklist" text="Check List Mapel" />
+      <ImageView fitHeight="49.0" fitWidth="50.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/WhatsApp%20Image%202020-04-17%20at%206.27.12%20AM.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="status" fill="#ee2929" layoutX="216.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="status : menunggu submit" />
+   </children>
+</AnchorPane>

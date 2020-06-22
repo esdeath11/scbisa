@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="89.0" stroke="DODGERBLUE" strokeType="INSIDE" width="651.0" />
+      <TableView fx:id="tabel" layoutY="88.0" prefHeight="396.0" prefWidth="651.0">
+        <columns>
+            <TableColumn fx:id="mapel3" prefWidth="205.0" text="MAPEL" />
+            <TableColumn fx:id="mapel4" prefWidth="65.0" text="UH1" />
+            <TableColumn fx:id="mapel5" prefWidth="63.0" text="UH2" />
+            <TableColumn fx:id="mapel6" prefWidth="60.0" text="UTS" />
+          <TableColumn fx:id="mapel1" prefWidth="48.0" text="UH3" />
+            <TableColumn fx:id="mapel11" prefWidth="104.0" text="UAS" />
+            <TableColumn fx:id="mapel12" prefWidth="105.0" text="RATA" />
+        </columns>
+      </TableView>
+      <Text fx:id="nama" fill="WHITE" layoutX="25.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nama siswa" />
+      <Text fx:id="nis" fill="WHITE" layoutX="101.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="no induk siswa" />
+      <Text fill="WHITE" layoutX="25.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Detail Nilai">
+         <font>
+            <Font name="Arial" size="32.0" />
+         </font>
+      </Text>
+      <Button layoutX="448.0" layoutY="32.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="78.0" text="UBAH" />
+      <Button layoutX="547.0" layoutY="32.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="78.0" text="HAPUS" />
+      <Button layoutX="357.0" layoutY="32.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="78.0" text="TAMBAH" />
+   </children>
+</AnchorPane>

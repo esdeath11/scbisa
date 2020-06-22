@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPackage.Table.DetailSiswa">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="73.0" stroke="DODGERBLUE" strokeType="INSIDE" width="734.0" />
+      <Text fill="WHITE" layoutX="65.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Detail Siswa">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="55.0" fitWidth="70.0" layoutX="5.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/WhatsApp%20Image%202020-04-17%20at%206.27.12%20AM.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tabel" layoutX="-1.0" layoutY="135.0" onMouseClicked="#checkData" prefHeight="292.0" prefWidth="734.0">
+        <columns>
+          <TableColumn fx:id="semester" prefWidth="91.0" text="Semester" />
+          <TableColumn fx:id="mapel1" prefWidth="105.0" text="mapel1" />
+            <TableColumn fx:id="mapel2" prefWidth="105.0" text="mapel2" />
+            <TableColumn fx:id="mapel3" prefWidth="105.0" text="mapel3" />
+            <TableColumn fx:id="mapel4" prefWidth="105.0" text="mapel4" />
+            <TableColumn fx:id="mapel5" prefWidth="105.0" text="mapel5" />
+            <TableColumn fx:id="mapel6" prefWidth="119.0" text="mapel6" />
+        </columns>
+      </TableView>
+      <Text layoutX="21.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID        :" />
+      <Text fx:id="id_detail" layoutX="75.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="21.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama  :" />
+      <Text fx:id="nama_detail" layoutX="75.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Button layoutX="640.0" layoutY="25.0" mnemonicParsing="false" onAction="#kembali" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #12b10f;" text="Kembali" textFill="WHITE" />
+      <Button layoutX="568.0" layoutY="25.0" mnemonicParsing="false" onAction="#update" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #12b10f;" text="Update" textFill="WHITE" />
+      <Button layoutX="391.0" layoutY="24.0" mnemonicParsing="false" onAction="#createNilaiSemester" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #12b10f;" text="Semester baru" textFill="WHITE" />
+      <Button layoutX="498.0" layoutY="25.0" mnemonicParsing="false" onAction="#Delete" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #12b10f;" text="Delete" textFill="WHITE" />
+   </children>
+</AnchorPane>
