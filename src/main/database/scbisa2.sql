@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 22, 2020 at 08:54 AM
+-- Generation Time: Jun 22, 2020 at 04:39 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.5
 
@@ -41,8 +41,11 @@ CREATE TABLE `arsip` (
 --
 
 INSERT INTO `arsip` (`id`, `nama_penulis`, `kategori`, `tanggal`, `path`, `verifikasi`) VALUES
-(5, 'M Rizky Badur', 'Proposal', '2020-06-21 21:05:02', 'qweqw', 0),
-(6, 'Soetomo Priyadi', 'laporan', '2020-06-21 21:20:56', 'C:UsersUSERDownloads182410102080_UAS_MKSI E.pdf', 1);
+(16, 'Soetomo Priyadi', 'Laporan', '2020-06-22 08:23:59', 'C:UsersUSERDownloads182410102080_UAS_MKSI E.pdf', 0),
+(18, 'Soetomo Priyadi', 'Proposal', '2020-06-22 08:25:38', 'C:UsersUSERDownloads182410102080_UAS_MKSI E.pdf', 0),
+(19, 'Soetomo Priyadi', 'Laporan', '2020-06-22 08:30:50', 'C:UsersUSERDownloadsUAS Algoritma dan Pemrograman 2.pdf', 0),
+(20, 'Soetomo Priyadi', 'Proposal', '2020-06-22 08:33:04', 'C:UsersUSERDownloadsUAS Algoritma dan Pemrograman 2.pdf', 0),
+(21, 'Soetomo Priyadi', 'Proposal', '2020-06-22 08:36:31', 'C:UsersUSERDownloadsUAS Algoritma dan Pemrograman 2.pdf', 0);
 
 -- --------------------------------------------------------
 
@@ -68,7 +71,8 @@ CREATE TABLE `detail_nilai` (
 --
 
 INSERT INTO `detail_nilai` (`id`, `id_siswa`, `nama_siswa`, `semester`, `mapel1`, `mapel2`, `mapel3`, `mapel4`, `mapel5`, `mapel6`) VALUES
-(13, 101020201001, 'Gabriela Browne', '2', 0, 0, 0, 99, 0, 0);
+(16, 101020201001, 'Gabriela Browne A', '1', 2, 1, 99, 3, 2, 1),
+(19, 101020201001, 'Gabriela Browne A', '2', 1, 3, 3, 99, 2, 2);
 
 -- --------------------------------------------------------
 
@@ -91,8 +95,7 @@ CREATE TABLE `guru` (
 --
 
 INSERT INTO `guru` (`id`, `nama`, `jabatan`, `gelar`, `id_Mapel`, `Alamat`, `password`) VALUES
-(100266112, 'M Rizky Badur', 'Guru', 'M. Pd. S.Pd.', 'Matematika', 'Jember', '123'),
-(1810300900, 'Soetomo Priyadi', 'Kepala Sekolah', 'M.Kom. S.Kom.', 'BHS INDO', 'Sumbersari', '123');
+(1810300900, 'Soetomo Priyadi', 'Kepala Sekolah', 'M.Kom. S.Kom.', 'BHS INDO', 'bwi', '123');
 
 -- --------------------------------------------------------
 
@@ -233,7 +236,7 @@ CREATE TABLE `siswa` (
 --
 
 INSERT INTO `siswa` (`id`, `nama`, `kelas_id`, `tp_lahir`, `tl_lahir`, `alamat`) VALUES
-(101020201001, 'Gabriela Browne', 'I A', 'Rennes', '2002-09-18', 'Rennes');
+(101020201001, 'Gabriela Browne A', 'I A', 'Rennes', '2002-09-18', 'Rennes');
 
 --
 -- Indexes for dumped tables
@@ -315,13 +318,13 @@ ALTER TABLE `siswa`
 -- AUTO_INCREMENT for table `arsip`
 --
 ALTER TABLE `arsip`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `detail_nilai`
 --
 ALTER TABLE `detail_nilai`
-  MODIFY `id` bigint(33) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` bigint(33) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `jabatan`
