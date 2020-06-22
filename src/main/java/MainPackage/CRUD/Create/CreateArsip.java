@@ -72,19 +72,19 @@ public class CreateArsip extends ControllerBrain {
 
     private void checkArsipType() {
         if (proposal.isSelected()) {
-            kategori = "propsal";
-            System.out.println("propisal");
+            kategori = "Proposal";
+            System.out.println("proposal");
         }
-        if (laporan.isSelected()) {
-            kategori = "laporan";
-            System.out.println("laporan");
+        else if (laporan.isSelected()) {
+            kategori = "Laporan";
+            System.out.println("Laporan");
         }
     }
 
     @FXML
     void submit(ActionEvent event) throws IOException {
         checkArsipType();
-            if (check == false || judul.getText().isEmpty()){
+            if (check == false){
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Error");
                 alert.setContentText("silahkan pilih kategori atau file belum dipilih");
@@ -93,11 +93,20 @@ public class CreateArsip extends ControllerBrain {
                 String query = "INSERT INTO `arsip` (`id`, `nama_penulis`, `kategori`, `path`) " +
                         "VALUES (NULL, '"+name_b+"', '"+kategori+"', '"+filepath+"');";
                 executeQuery(query);
-                Parent tableViewParent = FXMLLoader.load(getClass().getResource("/Table/List Arsip.fxml"));
-                Scene tableViewScene = new Scene(tableViewParent);
-                Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-                window.setScene(tableViewScene);
-                window.show();
+                if (jabatan_b.equals("Kepala Sekolah")){
+                    Parent tableViewParent = FXMLLoader.load(getClass().getResource("/Table/ListArsipKepsek.fxml"));
+                    Scene tableViewScene = new Scene(tableViewParent);
+                    Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+                    window.setScene(tableViewScene);
+                    window.show();
+                }
+                else if(jabatan_b.equals("Guru")){
+                    Parent tableViewParent = FXMLLoader.load(getClass().getResource("/Table/ListArsip.fxml"));
+                    Scene tableViewScene = new Scene(tableViewParent);
+                    Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+                    window.setScene(tableViewScene);
+                    window.show();
+                }
             }
 
 

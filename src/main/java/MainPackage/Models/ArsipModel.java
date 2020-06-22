@@ -3,12 +3,11 @@ package MainPackage.Models;
 import java.sql.Date;
 
 public class ArsipModel {
-    String id,judul,penulis,kategori;
+    String id,penulis,kategori;
     Date tanggal;
 
-    public ArsipModel(String id, String judul, String penulis, String kategori, Date tanggal) {
+    public ArsipModel(String id, String penulis, String kategori, Date tanggal) {
         this.id = id;
-        this.judul = judul;
         this.penulis = penulis;
         this.kategori = kategori;
         this.tanggal = tanggal;
@@ -22,13 +21,6 @@ public class ArsipModel {
         this.id = id;
     }
 
-    public String getJudul() {
-        return judul;
-    }
-
-    public void setJudul(String judul) {
-        this.judul = judul;
-    }
 
     public String getPenulis() {
         return penulis;

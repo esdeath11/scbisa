@@ -77,10 +77,9 @@ public class DataGuru extends ControllerBrain implements InDataGuru {
 
     public void submitEdit(ActionEvent event) throws IOException {
         GuruModel guruModel = table.getSelectionModel().getSelectedItem();
-        int a = Integer.parseInt(mapel_G);
-        String query = "UPDATE `guru` SET `nama` = '"+guruModel.getNama()+"', " +
-                "`jabatan` = '"+guruModel.getJabatan()+"', `gelar` = '"+guruModel.getGelar()+"', " +
-                "`id_Mapel` = '"+guruModel.getMapel()+"', `Alamat` = '"+guruModel.getAlamat()+"' WHERE `guru`.`id` = "+valueID+";";
+
+        String query = "UPDATE `guru` SET `nama` = '"+guruModel.getNama()+"', `jabatan` = '"+guruModel.getJabatan()+"', " +
+                "`gelar` = '"+guruModel.getGelar()+"', `id_Mapel` = '"+mapel_G+"', `Alamat` = '"+guruModel.getAlamat()+"' WHERE `guru`.`id` = "+valueID+";";
         executeQuery(query);
         Parent tableViewParent = FXMLLoader.load(getClass().getResource("/Table/dataguru.fxml"));
         Scene tableViewScene = new Scene(tableViewParent);

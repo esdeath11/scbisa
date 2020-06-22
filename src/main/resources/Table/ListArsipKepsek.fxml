@@ -21,11 +21,10 @@
       <Button layoutX="603.0" layoutY="11.0" mnemonicParsing="false" onAction="#kembali" prefHeight="31.0" prefWidth="62.0" text="Kembali" />
       <TableView fx:id="table" layoutY="55.0" onMouseClicked="#getID" prefHeight="353.0" prefWidth="690.0">
         <columns>
-          <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
-          <TableColumn fx:id="judul" prefWidth="137.0" text="JUDUL" />
-            <TableColumn fx:id="penulis" prefWidth="220.0" text="PENULIS" />
-            <TableColumn fx:id="kategori" prefWidth="117.0" text="KATEGORI" />
-            <TableColumn fx:id="tanggal" prefWidth="140.0" text="TANGGAL" />
+          <TableColumn fx:id="id" prefWidth="160.0" text="ID" />
+            <TableColumn fx:id="penulis" prefWidth="192.0" text="PENULIS" />
+            <TableColumn fx:id="kategori" prefWidth="165.0" text="KATEGORI" />
+            <TableColumn fx:id="tanggal" prefWidth="172.0" text="TANGGAL" />
         </columns>
       </TableView>
       <ImageView fitHeight="55.0" fitWidth="62.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true">

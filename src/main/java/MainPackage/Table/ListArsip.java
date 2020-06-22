@@ -31,8 +31,6 @@ public class ListArsip extends ControllerBrain {
     @FXML
     private TableColumn<ArsipModel, String> id;
 
-    @FXML
-    private TableColumn<ArsipModel, String> judul;
 
     @FXML
     private TableColumn<ArsipModel, String> penulis;
@@ -61,8 +59,8 @@ public class ListArsip extends ControllerBrain {
             Connection con = DBConnection.getConnection();
             ResultSet rs = con.createStatement().executeQuery("SELECT * FROM arsip");
             while (rs.next()){
-                oblist.add(new ArsipModel(rs.getString(1),rs.getString(3),rs.getString(2),
-                        rs.getString(5),rs.getDate(4)));
+                oblist.add(new ArsipModel(rs.getString("id"),rs.getString("nama_penulis"),
+                        rs.getString("kategori"),rs.getDate("tanggal")));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -73,7 +71,6 @@ public class ListArsip extends ControllerBrain {
     private void showData(){
 
         id.setCellValueFactory(new PropertyValueFactory<>("id"));
-        judul.setCellValueFactory(new PropertyValueFactory<>("judul"));
         penulis.setCellValueFactory(new PropertyValueFactory<>("penulis"));
         kategori.setCellValueFactory(new PropertyValueFactory<>("kategori"));
         tanggal.setCellValueFactory(new PropertyValueFactory<>("tanggal"));
